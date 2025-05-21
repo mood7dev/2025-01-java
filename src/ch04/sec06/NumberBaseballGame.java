@@ -73,9 +73,9 @@ public class NumberBaseballGame {
 
             // 7. 스트라이크, 볼 판정
             int s = 0, b = 0;
-            for (int i = 0; i < answerArr.length; i++) {
-                for (int k = 0; k < answerArr.length; k++) {
-                    if (answerArr[i] == inputArr[k]) {
+            for (int i = 0; i < answerArr.length; i++) {          // 정답 배열에서 하나씩 꺼냄
+                for (int k = 0; k < answerArr.length; k++) {      // 입력 배열에서 하나씩 꺼냄
+                    if (answerArr[i] == inputArr[k]) {            // 숫자가 같을 때
                         if (i == k) {
                             s++; // 같은 위치 같은 숫자 → 스트라이크
                         } else {
@@ -110,3 +110,5 @@ public class NumberBaseballGame {
         sc.close();
     }
 }
+
+
